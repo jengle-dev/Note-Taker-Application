@@ -1,4 +1,3 @@
-const express = require('express');
 const note = require('express').Router();
 
 // activeNote is used to keep track of the note in the textarea
@@ -11,15 +10,17 @@ const getNotes = () =>
       'Content-Type': 'application/json',
     },
   });
+getNotes();
 
 const saveNote = (note) =>
-  fetch('/api/notes', {
+  fetch('/api/notes/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
   });
+saveNote();
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
@@ -28,6 +29,7 @@ const deleteNote = (id) =>
       'Content-Type': 'application/json',
     },
   });
+deleteNote();
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
@@ -55,6 +57,7 @@ const handleNoteSave = () => {
     renderActiveNote();
   });
 };
+handleNoteSave();
 
 // Delete the clicked note
 const handleNoteDelete = (e) => {
@@ -73,6 +76,7 @@ const handleNoteDelete = (e) => {
     renderActiveNote();
   });
 };
+handleNoteDelete();
 
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
@@ -80,12 +84,14 @@ const handleNoteView = (e) => {
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
   renderActiveNote();
 };
+handleNoteView();
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
 const handleNewNoteView = (e) => {
   activeNote = {};
   renderActiveNote();
 };
+handleNewNoteView();
 
 const handleRenderSaveBtn = () => {
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
@@ -94,6 +100,8 @@ const handleRenderSaveBtn = () => {
     show(saveNoteBtn);
   }
 };
+handleRenderSaveBtn();
+getAndRenderNotes();
 
 module.exports = note;
 

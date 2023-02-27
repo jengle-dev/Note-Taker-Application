@@ -1,4 +1,3 @@
-const express = require('express');
 const noteList = require('express').Router();
 
 // Render the list of note titles
@@ -54,5 +53,5 @@ const renderNoteList = async (notes) => {
       noteListItems.forEach((note) => noteList[0].append(note));
     }
   };
-  
+  renderNoteList();
 module.exports = noteList;
