@@ -5,19 +5,29 @@ This is a project to make a simple backend connection for an already designed an
 </br>
 
 ## Usage
+</br>
+
 ## Visuals
+
+</br>
+
 ## Installation
 * Node: 'npm install'
 * Express: 'npm install express'
+</br>
+
 ## References
 I am still going through the coursework for a coding bootcamp. I use many different pieces from opensource to fully developed code to help me learn ways to accomplish the goals. Some of the main sites I used on this project are the following:
 * 
 * 
 </br>
 
-## Credits
+## Support
+If there are issues with the site, please reach out to me, Jennifer Engle, at j.engle.dev@gmail.com and reference the site's URL. Please provide any screenshots and behavior along with your browser information.
+
+## Contributing
+I am open to collaboration for contributing to updates to this page. Please email me at j.engle.dev@gmail.com. </br>
 There are no additional contributors at the time of the last commit to this project.
-</br>
 
 ## License
 There is no license for this project.
