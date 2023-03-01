@@ -5,10 +5,12 @@ This is a project to make a simple backend connection for an already designed an
 </br>
 
 ## Usage
+The user would go to this app to enter notes for whatever their needs are. The app will store the notes and the notes can be deleted by the user.
 </br>
 
 ## Visuals
 The index.html landing page was predefined and coded for this project ahead of time.
+![image](https://user-images.githubusercontent.com/117794203/222037511-500ab93b-4a7b-4c14-a93f-3371e3761994.png)
 
 A majority of the design of the notes.html was also predefined and coded for this project ahead of time. 
 
@@ -31,6 +33,8 @@ If there are issues with the site, please reach out to me, Jennifer Engle, at j.
 ## Contributing
 I am open to collaboration for contributing to updates to this page. Please email me at j.engle.dev@gmail.com. </br>
 There are no additional contributors at the time of the last commit to this project.
+
+I'd like to thank David Love for helping me understand the GET POST and DELETE methods better.
 
 ## License
 There is no license for this project.
