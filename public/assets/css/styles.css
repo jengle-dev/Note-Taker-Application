@@ -76,9 +76,3 @@ body {
   padding: 20px;
   cursor: pointer;
 }
-
-/* trying to get rid of blue button default */
-button .btn .btn-primary{
-  background-color: #0dcaf0;
-  border: none;
-}

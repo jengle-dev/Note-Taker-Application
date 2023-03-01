@@ -8,6 +8,9 @@ This is a project to make a simple backend connection for an already designed an
 </br>
 
 ## Visuals
+The index.html landing page was predefined and coded for this project ahead of time.
+
+A majority of the design of the notes.html was also predefined and coded for this project ahead of time. 
 
 </br>
 
@@ -18,8 +21,8 @@ This is a project to make a simple backend connection for an already designed an
 
 ## References
 I am still going through the coursework for a coding bootcamp. I use many different pieces from opensource to fully developed code to help me learn ways to accomplish the goals. Some of the main sites I used on this project are the following:
-* 
-* 
+* https://www.geeksforgeeks.org/express-js-app-delete-function/
+* Reviewed coursework solved files.
 </br>
 
 ## Support
