@@ -25,6 +25,7 @@ A majority of the design of the notes.html was also predefined and coded for thi
 I am still going through the coursework for a coding bootcamp. I use many different pieces from opensource to fully developed code to help me learn ways to accomplish the goals. Some of the main sites I used on this project are the following:
 * https://www.geeksforgeeks.org/express-js-app-delete-function/
 * Reviewed coursework solved files.
+* https://stackoverflow.com/questions/65015000/how-do-i-use-express-js-app-delete-to-remove-a-specific-object-from-an-array#:~:text=Assuming%20your%20array%20is%20just,req%2C%20res)%20%7B%20console 
 </br>
 
 ## Support

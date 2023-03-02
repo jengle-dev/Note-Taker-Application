@@ -32,7 +32,7 @@ app.get('/api/notes', (req, res) => {
   })
 });
 
-app.post('/', (req, res) => {
+app.post('/notes', (req, res) => {
   fs.readFile('./db/db.json', 'utf-8', (err, data) => {
     if (err) {
       console.log(err);
@@ -49,15 +49,27 @@ app.post('/', (req, res) => {
           res.json(err);
         } else {
           res.status(200);
+          document.location.reload();
         }
       })
     }
   })
 });
 
-app.delete('/api/notes/:id', (req, res) => {
-// array equal to parameter id to remove and then rewrite the file without that line
-  res
-}
-);
+app.delete('/api/notes/:id', (req, data) => {
+  // array equal to parameter id to remove and then rewrite the file without that line
+  const idToDelete = parseInt(req.params.id);
+  let dataArray = data;
+
+  const deleteIndex = dataArray.indexOf(idToDelete);
+  //remove the index line
+  if (deleteIndex > -1) {
+    dataArray.splice(deleteIndex, 1);
+    res.send(`Deleted data row with id ${idToDelete} from the db array.`);
+    document.location.reload();
+  } else {
+    res.sent(`Data row with id ${idToDelete} is not found in the db array.`);
+  }
+});
+
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
